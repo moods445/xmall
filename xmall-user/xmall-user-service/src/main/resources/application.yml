@@ -1,0 +1,17 @@
+server:
+  port: 8081
+
+#spring:
+#  application:
+#    name: xmall-user
+#  cloud:
+#    nacos:
+#      discovery:
+#        server-addr: ubuntu.rn.modds.xyz:8848
+
+# actuator
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

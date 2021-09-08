@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: xmall-order
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+#      discovery:
+#        server-addr: ubuntu.rn.modds.xyz:8848
+#        namespace:
+      config:
+        server-addr: ubuntu.rn.modds.xyz:8848
+        file-extension: yaml
+        shared-dataids: xmall-common.yaml,xmall-datasource-common.yaml,dubbo-common.yaml
+        namespace: 75712d24-93a0-449e-b43b-555edc7d73f7
