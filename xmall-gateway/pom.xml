@@ -11,6 +11,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>xmall-gateway-admin</module>
+        <module>xmall-gateway-api</module>
     </modules>
 
     <artifactId>xmall-gateway</artifactId>

@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-@MapperScan("com.modds.xmall.user.dao")
+@MapperScan("com.modds.xmall.user.mapper")
 public class XMallUserApplication {
 
     public static void main(String[] args) throws InterruptedException {

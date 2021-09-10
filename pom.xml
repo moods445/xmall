@@ -13,6 +13,9 @@
         <module>xmall-common</module>
         <module>xmall-admin</module>
         <module>xmall-order</module>
+        <module>xmall-payment</module>
+        <module>xmall-generator</module>
+        <module>xmall-commodity</module>
     </modules>
     <packaging>pom</packaging>
     <!--    <parent>-->
@@ -113,14 +116,23 @@
                 <groupId>com.baomidou</groupId>
                 <artifactId>mybatis-plus-generator</artifactId>
                 <version>3.4.1</version>
-                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-annotation</artifactId>
+                <version>3.4.1</version>
             </dependency>
             <dependency>
                 <groupId>org.freemarker</groupId>
                 <artifactId>freemarker</artifactId>
                 <version>2.3.30</version>
-                <scope>test</scope>
             </dependency>
+            <dependency>
+                <groupId>org.springdoc</groupId>
+                <artifactId>springdoc-openapi-ui</artifactId>
+                <version>1.5.2</version>
+            </dependency>
+
 
             <dependency>
                 <groupId>mysql</groupId>

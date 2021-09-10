@@ -5,12 +5,8 @@ spring:
     active: dev
   cloud:
     nacos:
-      discovery:
-        server-addr: ubuntu.rn.modds.xyz:8848
       config:
+        server-addr: ubuntu.rn.modds.xyz:8848
         file-extension: yaml
-
-
-#  spring.cloud.nacos.config.ext-config[2].data-id=ext-config-common03.properties
-#  spring.cloud.nacos.config.ext-config[2].group=REFRESH_GROUP
-#  spring.cloud.nacos.config.ext-config[2].refresh=true
+        shared-dataids: xmall-common.yaml,dubbo-common.yaml,xmall-discovery-common.yaml
+        namespace: 75712d24-93a0-449e-b43b-555edc7d73f7

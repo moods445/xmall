@@ -1,4 +1,4 @@
-package com.modds.xmall.user.controller.app;
+package com.modds.xmall.user.controller.api;
 
 import com.modds.xmall.user.domain.User;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -7,11 +7,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/app/user/")
+@RequestMapping("/api/user/")
 public class UserAppController {
 
     @GetMapping("/{uid}")
     public User getUsers(@PathVariable("uid") long uid) {
-        return new User();
+        return User.builder()
+                .id(uid)
+                .build();
     }
 }

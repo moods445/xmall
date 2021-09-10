@@ -2,8 +2,6 @@ server:
   port: 8083
 
 spring:
-  profiles:
-    active: dev
   cloud:
     gateway:
       globalcors:
@@ -15,12 +13,6 @@ spring:
         - id: xmall-user
           uri: lb://xmall-user
           predicates:
-            - Path=/app/user/**
+            - Path=/user/admin/**
 #          filters:
 #            - name: admin-jwt
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
